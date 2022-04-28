@@ -1,114 +1,188 @@
 .container {
-  padding: 0 2rem;
+  min-height: 100vh;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
-
-.footer {
+.nav {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 14px;
+}
+.navLink {
+  font-size: 13px;
+  display: inline-block;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.87);
+  cursor: pointer;
+  padding: 5px 6.7px;
+}
+.navLink:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+.navImg {
+  width: 34px;
+  padding: 5px;
+  margin: auto 7px;
+  cursor: pointer;
+}
+.navImg:hover {
+  opacity: 0.8;
+}
+.navButton {
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  background: #4285f4;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 3px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+.section1 {
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+}
+.logo {
+  display: block;
+  margin: 0px auto;
+  margin-top: 107px;
+  margin-bottom: 50px;
+}
+.Box {
+  width: 580px;
+  margin: 0px auto;
+  position: relative;
+  margin-top: -8px;
+  text-align: center;
+}
+.sInput {
+  display: block;
+  border: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 100%;
+  transition: box-shadow 100ms;
+  outline: none;
+}
+.sInput:hover {
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05),
+    0 0 3px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
+    0 0 5px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
+    0 0 5px rgba(0, 0, 0, 0.05);
+}
+.searchIcon {
+  width: 20px;
+  opacity: 0.4;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+.vsIcon {
+  width: 14px;
+  position: absolute;
+  top: 13px;
+  right: 24px;
+}
+.sBtn {
+  border: 1px solid transparent;
+  padding: 9px 15px;
+  color: #666;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 28px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 100ms;
+}
+.sBtn:hover {
+  border: 1px solid #aaa;
+}
+.searchBox {
+  width: 580px;
+  margin: 0px auto;
+  position: relative;
+}
+.Dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  padding: 4px 0px;
+  background: rgb(244, 247, 248);
+  display: inline-block;
+
+  border-radius: 8px;
+  border: 1px solid rgb(239, 237, 237);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05),
+    0 0 3px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
+    0 0 5px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
+    0 0 5px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  overflow-y: auto;
+}
+.DropdownItem {
+  padding: 6px 0px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(239, 237, 237);
+  transition: background-color 100ms;
+  list-style: none;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.DropdownText {
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  margin-left: 15px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.DropdownItem:hover {
+  background: rgb(214, 224, 230);
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+.lang {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #111;
+}
+.lang a {
+  margin-left: 5px;
+  color: #1a0dab;
+}
+.lang a:hover {
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.links {
+  border-top: 1px solid #ddd;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.link1 {
+  padding-left: 18.7px;
+  flex: 1;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.link2 {
+  padding-right: 18.7px;
 }
 
 @media (max-width: 600px) {
+  .searchBox {
+    width: 440px;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
